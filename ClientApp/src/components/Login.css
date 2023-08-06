@@ -1,0 +1,66 @@
+﻿@media (min-width: 760px) and (min-height: 500px) {
+    .containerreact {
+        display: flex;
+        position:relative;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        background-color: snow;
+        width:80vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        border-radius: 6px;
+    }
+    
+
+    .filled {
+        border: 2px solid green;
+        box-shadow: 0 0 10px green;
+    }
+
+    .empty {
+        border: 2px solid black;
+    }
+
+    .custom-input {
+        margin-left: 30px;
+    }
+
+    #formhead {
+        font-size: 5vh;
+        font-family: Arial;
+    }
+
+    .custom-input.correct:focus {
+        box-shadow: 0 0 10px green !important;
+    }
+
+    .custom-input.wrong:focus {
+        box-shadow: 0 0 10px red !important;
+    }
+    
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vh;
+        position: absolute;
+        top: calc(83% );
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+html {
+    background-color:white;
+}
+button {
+    color:hsl(262, 51%, 16%);
+}
+#error{
+    color:darkred;
+    background-color:darksalmon;
+}
